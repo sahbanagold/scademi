@@ -1,0 +1,161 @@
+doctype html
+html(lang='en')
+  head
+    meta(charset='utf-8')
+    meta(http-equiv='X-UA-Compatible', content='IE=edge')
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+    meta(name='description', content='')
+    meta(name='author', content='')
+    title SB Admin - Bootstrap Admin Template
+    // Bootstrap Core CSS
+    link(href='css/bootstrap.min.css', rel='stylesheet')
+    // Custom CSS
+    link(href='css/sb-admin.css', rel='stylesheet')
+    // Morris Charts CSS
+    link(href='css/plugins/morris.css', rel='stylesheet')
+    // Custom Fonts
+    link(href='font-awesome/css/font-awesome.min.css', rel='stylesheet', type='text/css')
+    // HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries
+    // WARNING: Respond.js doesn't work if you view the page via file://
+    //if lt IE 9
+      script(src='https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js')
+      script(src='https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js')
+  body
+    #wrapper
+      // Navigation
+      nav.navbar.navbar-inverse.navbar-fixed-top(role='navigation')
+        // Brand and toggle get grouped for better mobile display
+        .navbar-header
+          button.navbar-toggle(type='button', data-toggle='collapse', data-target='.navbar-ex1-collapse')
+            span.sr-only Toggle navigation
+            span.icon-bar
+            span.icon-bar
+            span.icon-bar
+          a.navbar-brand(href='index.html') SB Admin
+        // Top Menu Items
+        ul.nav.navbar-right.top-nav
+          li.dropdown
+          li.dropdown
+            a.dropdown-toggle(href='#', data-toggle='dropdown')
+              i.fa.fa-user
+              |  John Smith
+              b.caret
+            ul.dropdown-menu
+              li
+                a(href='profiluser.html')
+                  i.fa.fa-fw.fa-user
+                  |  Profile
+              li
+                a(href='#')
+                  i.fa.fa-fw.fa-envelope
+                  |  Inbox
+              li
+                a(href='#')
+                  i.fa.fa-fw.fa-gear
+                  |  Settings
+              li.divider
+              li
+                a(href='index.html')
+                  i.fa.fa-fw.fa-power-off
+                  |  Log Out
+        // Sidebar Menu Items - These collapse to the responsive navigation menu on small screens
+        .collapse.navbar-collapse.navbar-ex1-collapse
+          ul.nav.navbar-nav.side-nav
+            li
+              a(href='user.html')
+                i.fa.fa-fw.fa-dashboard
+                |  Dashboard
+            li.active
+              a(href='profiluser.html')
+                i.fa.fa-fw.fa-bar-chart-o
+                |  Profile
+            li
+              a(href='scoreboard.html')
+                i.fa.fa-fw.fa-table
+                |  Score Board
+            li
+              a(href='forms.html')
+                i.fa.fa-fw.fa-edit
+                |  Forms
+        // /.navbar-collapse
+      #page-wrapper
+        .container-fluid
+          // Page Heading
+          .row
+            .col-lg-12
+              h1.page-header
+                | Profil
+              ol.breadcrumb
+                li
+                  i.fa.fa-dashboard
+                  a(href='user.html') Dashboard
+                li.active
+                  i.fa.fa-bar-chart-o
+                  |  Profil
+          // /.row
+          // Flot Charts
+          .row
+            .col-lg-12
+              h2.page-header Profil
+          // /.row
+          .row
+            .col-lg-12
+              .panel.panel-primary
+                .table-responsive
+                  table.table.table-bordered.table-hover
+                    tbody
+                      tr
+                        td Name
+                        td 1265
+                        td
+                          button.btn.btn-lg.btn-info(type='button') Edit
+                      tr
+                        td Birthday
+                        td 261
+                        td
+                          button.btn.btn-lg.btn-info(type='button') Edit
+                      tr
+                        td Email
+                        td 665
+                        td
+                          button.btn.btn-lg.btn-info(type='button') Edit
+                      tr
+                        td Username
+                        td 9516
+                        td
+                          button.btn.btn-lg.btn-info(type='button') Edit
+                      tr
+                        td Password
+                        td 23
+                        td
+                          button.btn.btn-lg.btn-info(type='button') Edit
+                      tr
+                        td Address
+                        td 421
+                        td
+                          button.btn.btn-lg.btn-info(type='button') Edit
+                      tr
+                        td /blog/post.html
+                        td 1233
+                        td
+                          button.btn.btn-lg.btn-info(type='button') Edit
+              // /.row
+            // /.container-fluid
+          // /#page-wrapper
+        // /#wrapper
+        // jQuery
+        script(src='js/jquery.js')
+        // Bootstrap Core JavaScript
+        script(src='js/bootstrap.min.js')
+        // Morris Charts JavaScript
+        script(src='js/plugins/morris/raphael.min.js')
+        script(src='js/plugins/morris/morris.min.js')
+        script(src='js/plugins/morris/morris-data.js')
+        // Flot Charts JavaScript
+        //if lte IE 8
+          script(src='js/excanvas.min.js')
+        script(src='js/plugins/flot/jquery.flot.js')
+        script(src='js/plugins/flot/jquery.flot.tooltip.min.js')
+        script(src='js/plugins/flot/jquery.flot.resize.js')
+        script(src='js/plugins/flot/jquery.flot.pie.js')
+        script(src='js/plugins/flot/flot-data.js')

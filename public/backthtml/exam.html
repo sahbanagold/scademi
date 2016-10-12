@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>TPA Online</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Theme CSS -->
+    <link href="css/freelancer.min.css" rel="stylesheet">
+    <link href="css/bebas.css" rel="stylesheet">
+    <!-- Custom Fonts -->
+    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body id="page-top" class="index">
+
+    <!-- Navigation -->
+    <nav id="mainNav" class="navbar navbar-default navbar-fixed-top navbar-custom-exam">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse">
+                    <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
+                </button>
+                <img class="navbar-brand " src="img/glyphicons-211-arrow-left.png" alt="" id="arrow_left">
+                <img class="navbar-brand " src="img/glyphicons-212-arrow-right.png" alt="" id="arrow_right">
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="hidden">
+                        <a href="#page-top"></a>
+                    </li>
+                    <li>
+                        <a href="#about">Time</a>
+                    </li>
+                    <li>
+                      <p style="line-height: 50px;">
+                        <button type="button" class=" btn btn-default btn_time" id="btn_hour">01</button>
+                        <button type="button" class=" btn btn-default btn_time" id="btn_minute">02</button>
+                        <button type="button" class=" btn btn-default btn_time" id="btn_second">02</button>
+                    </li>
+                    <li>
+                      <a href="#about">Current Question</a>
+                      <li>
+                    <li>
+                      <p style="line-height: 50px; text-align: center;">
+                        <button type="button" class=" btn btn-default" id="current">10</button> </p>
+                    </li>
+                    <li>
+                        <a href="#about">Answer</a>
+                    </li>
+                  <li>
+                    <p style="line-height: 50px; text-align: center;">
+                      <button type="button" class=" btn btn-default" id="btn_qanswer">11</button> </p>
+                  </li>
+                  <li>
+                      <a href="#about"></a>
+                  </li>
+                    <li>
+                      <p style="line-height: 50px; text-align: center;">
+                        <button type="button" class=" btn btn-default" id="btn_no1" class="allno">1</button>
+                        <button type="button" class=" btn btn-default" id="btn_no2" class="allno">2</button>
+                        <button type="button" class=" btn btn-default" id="btn_no3" class="allno">3</button>
+                        <button type="button" class=" btn btn-default" id="btn_no4" class="allno">4</button>
+                        <button type="button" class=" btn btn-default" id="btn_no5" class="allno">5</button>
+
+                        <button type="button" class=" btn btn-default" id="btn_no6" class="allno">6</button>
+                        <button type="button" class=" btn btn-default" id="btn_no7" class="allno">7</button>
+                        <button type="button" class=" btn btn-default" id="btn_no8" class="allno">8</button>
+                        <button type="button" class=" btn btn-default" id="btn_no9" class="allno">9</button>
+                        <button type="button" class=" btn btn-default" id="btn_no10" class="allno">10</button>&nbsp; </p>
+
+                    </li>
+                    <li>
+                      <p style="line-height: 50px; text-align: center;">
+                      <img class="navbar-brand " src="img/glyphicons-214-arrow-up.png" alt="" id="arrow_right">
+                      <img class="navbar-brand " src="img/glyphicons-213-arrow-down.png" alt="" id="arrow_right">
+
+                        <a href="score.html"><button type="button" class="btn-success btn-lg" id="btn_finish">Finish</button></a>
+                    </p>
+                    </li>
+
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
+
+    <!-- Header -->
+    <header>
+        <div class="container">
+
+          <h1>Pertanyaan</h1>
+            <div class="row">
+                <div class="col-lg-12">
+                  <div class="row">
+                      <div class="col-lg-6 text-center">
+                          <div class="panel panel-default rows="10%" cols="50%"">
+                              <div class="panel-body question">
+                                  <p id="question">
+                                    .col-lg-6
+                                  </p>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="col-lg-6 " style="text-align: left;">
+                                <div>
+                                <label class="radio-inline"><input type="radio" name="optradio" id="option1">A</label>
+                                </div>
+                                <div>
+                                <label class="radio-inline"><input type="radio" name="optradio" id="option2">B</label>
+                                </div>
+                                <div>
+                                <label class="radio-inline"><input type="radio" name="optradio" id="option3">C</label>
+                                </div>
+                                <div>
+                                <label class="radio-inline"><input type="radio" name="optradio" id="option4">D</label>
+                                </div>
+                                <div>
+                                <label class="radio-inline"><input type="radio" name="optradio" id="option5">E</label>
+                              </div>
+                              </div>
+                  </div>
+                    <div class="intro-text">
+
+                      <br>
+                          <button type="submit" class="btn-success btn-lg colorbtn" id="btn_answer">Answer</button>
+
+                      </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </header>
+
+    <!-- Footer -->
+    <footer class="text-center">
+        <div class="footer-above">
+            <div class="container">
+                <div class="row">
+                    <div class="footer-col col-md-4">
+                        <h3>Location</h3>
+                        <p>Jakarta Selatan
+                            <br>Patal Senayan, Rukan Permata Block F</p>
+                    </div>
+                    <div class="footer-col col-md-4">
+                        <h3>Social Media</h3>
+                        <ul class="list-inline">
+                            <li>
+                                <a href="#" class="btn-social btn-outline"><i class="fa fa-fw fa-facebook"></i></a>
+                            </li>
+                            <li>
+                                <a href="#" class="btn-social btn-outline"><i class="fa fa-fw fa-google-plus"></i></a>
+                            </li>
+                            <li>
+                                <a href="#" class="btn-social btn-outline"><i class="fa fa-fw fa-twitter"></i></a>
+                            </li>
+                            <li>
+                                <a href="#" class="btn-social btn-outline"><i class="fa fa-fw fa-linkedin"></i></a>
+                            </li>
+                            <li>
+                                <a href="#" class="btn-social btn-outline"><i class="fa fa-fw fa-dribbble"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer-col col-md-4">
+                        <h3>About ScademI</h3>
+                        <p>TPA Online Based, Pair Project Phase 1, September of 2016. Created by <br> <a href="http://sahbanagold.github.io">Sahbana</a> &amp; <a href="http://imamnugraha23.github.io">Imam</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-below">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        Copyright &copy; Sahbana&amp;Imam
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scroll to Top Button (Only visible on small and extra-small screen sizes) -->
+    <div class="scroll-top page-scroll hidden-sm hidden-xs hidden-lg hidden-md">
+        <a class="btn btn-primary" href="#page-top">
+            <i class="fa fa-chevron-up"></i>
+        </a>
+    </div>
+
+
+
+    <!-- jQuery -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+
+    <!-- Contact Form JavaScript -->
+    <script src="js/jqBootstrapValidation.js"></script>
+    <script src="js/contact_me.js"></script>
+
+    <!-- Theme JavaScript -->
+    <script src="js/freelancer.min.js"></script>
+
+</body>
+
+</html>

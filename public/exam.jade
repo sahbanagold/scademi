@@ -1,0 +1,173 @@
+doctype html
+html(lang='en')
+  head
+    meta(charset='utf-8')
+    meta(http-equiv='X-UA-Compatible', content='IE=edge')
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+    meta(name='description', content='')
+    meta(name='author', content='')
+    title TPA Online
+    // Bootstrap Core CSS
+    link(href='vendor/bootstrap/css/bootstrap.min.css', rel='stylesheet')
+    // Theme CSS
+    link(href='css/freelancer.min.css', rel='stylesheet')
+    link(href='css/bebas.css', rel='stylesheet')
+    // Custom Fonts
+    link(href='vendor/font-awesome/css/font-awesome.min.css', rel='stylesheet', type='text/css')
+    link(href='https://fonts.googleapis.com/css?family=Montserrat:400,700', rel='stylesheet', type='text/css')
+    link(href='https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic', rel='stylesheet', type='text/css')
+    // HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries
+    // WARNING: Respond.js doesn't work if you view the page via file://
+    //if lt IE 9
+      script(src='https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js')
+      script(src='https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js')
+  body#page-top.index
+    // Navigation
+    nav#mainNav.navbar.navbar-default.navbar-fixed-top.navbar-custom-exam
+      .container
+        // Brand and toggle get grouped for better mobile display
+        .navbar-header.page-scroll
+          button.navbar-toggle(type='button', data-toggle='collapse')
+            span.sr-only Toggle navigation
+            |  Menu
+            i.fa.fa-bars
+          img#arrow_left.navbar-brand(src='img/glyphicons-211-arrow-left.png', alt='')
+          img#arrow_right.navbar-brand(src='img/glyphicons-212-arrow-right.png', alt='')
+        // Collect the nav links, forms, and other content for toggling
+        #bs-example-navbar-collapse-1.collapse.navbar-collapse
+          ul.nav.navbar-nav.navbar-right
+            li.hidden
+              a(href='#page-top')
+            li
+              a(href='#about') Time
+            li
+              p(style='line-height: 50px;')
+                button#btn_hour.btn.btn-default.btn_time(type='button') 01
+                button#btn_minute.btn.btn-default.btn_time(type='button') 02
+                button#btn_second.btn.btn-default.btn_time(type='button') 02
+            li
+              a(href='#about') Current Question
+            li
+            li
+              p(style='line-height: 50px; text-align: center;')
+                button#current.btn.btn-default(type='button') 10
+            li
+              a(href='#about') Answer
+            li
+              p(style='line-height: 50px; text-align: center;')
+                button#btn_qanswer.btn.btn-default(type='button') 11
+            li
+              a(href='#about')
+            li
+              p(style='line-height: 50px; text-align: center;')
+                button#btn_no1.btn.btn-default(type='button') 1
+                button#btn_no2.btn.btn-default(type='button') 2
+                button#btn_no3.btn.btn-default(type='button') 3
+                button#btn_no4.btn.btn-default(type='button') 4
+                button#btn_no5.btn.btn-default(type='button') 5
+                button#btn_no6.btn.btn-default(type='button') 6
+                button#btn_no7.btn.btn-default(type='button') 7
+                button#btn_no8.btn.btn-default(type='button') 8
+                button#btn_no9.btn.btn-default(type='button') 9
+                button#btn_no10.btn.btn-default(type='button') 10
+            li
+              p(style='line-height: 50px; text-align: center;')
+                img#arrow_right.navbar-brand(src='img/glyphicons-214-arrow-up.png', alt='')
+                img#arrow_right.navbar-brand(src='img/glyphicons-213-arrow-down.png', alt='')
+                a(href='/score')
+                  button#btn_finish.btn-success.btn-lg(type='button') Finish
+        // /.navbar-collapse
+      // /.container-fluid
+    // Header
+    header
+      .container
+        h1 Pertanyaan
+        .row
+          .col-lg-12
+            .row
+              .col-lg-6.text-center
+                .panel.panel-default(class='rows=', cols='50%')
+                  .panel-body.question
+                    p#question
+                      | question
+              .col-lg-6(style='text-align: left;')
+                div
+                  label.radio-inline
+                    input#option1(type='radio', name='optradio')
+                    | A
+                div
+                  label.radio-inline
+                    input#option2(type='radio', name='optradio')
+                    | B
+                div
+                  label.radio-inline
+                    input#option3(type='radio', name='optradio')
+                    | C
+                div
+                  label.radio-inline
+                    input#option4(type='radio', name='optradio')
+                    | D
+                div
+                  label.radio-inline
+                    input#option5(type='radio', name='optradio')
+                    | E
+            .intro-text
+              br
+              button#btn_answer.btn-success.btn-lg.colorbtn(type='submit') Answer
+    // Footer
+    footer.text-center
+      .footer-above
+        .container
+          .row
+            .footer-col.col-md-4
+              h3 Location
+              p
+                | Jakarta Selatan
+                br
+                | Patal Senayan, Rukan Permata Block F
+            .footer-col.col-md-4
+              h3 Social Media
+              ul.list-inline
+                li
+                  a.btn-social.btn-outline(href='#')
+                    i.fa.fa-fw.fa-facebook
+                li
+                  a.btn-social.btn-outline(href='#')
+                    i.fa.fa-fw.fa-google-plus
+                li
+                  a.btn-social.btn-outline(href='#')
+                    i.fa.fa-fw.fa-twitter
+                li
+                  a.btn-social.btn-outline(href='#')
+                    i.fa.fa-fw.fa-linkedin
+                li
+                  a.btn-social.btn-outline(href='#')
+                    i.fa.fa-fw.fa-dribbble
+            .footer-col.col-md-4
+              h3 About ScademI
+              p
+                | TPA Online Based, Pair Project Phase 1, September of 2016. Created by
+                br
+                a(href='http://sahbanagold.github.io') Sahbana
+                |  &
+                a(href='http://imamnugraha23.github.io') Imam
+      .footer-below
+        .container
+          .row
+            .col-lg-12
+              | Copyright © Sahbana&Imam
+    // Scroll to Top Button (Only visible on small and extra-small screen sizes)
+    .scroll-top.page-scroll.hidden-sm.hidden-xs.hidden-lg.hidden-md
+      a.btn.btn-primary(href='#page-top')
+        i.fa.fa-chevron-up
+    // jQuery
+    script(src='vendor/jquery/jquery.min.js')
+    // Bootstrap Core JavaScript
+    script(src='vendor/bootstrap/js/bootstrap.min.js')
+    // Plugin JavaScript
+    script(src='https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js')
+    // Contact Form JavaScript
+    script(src='js/jqBootstrapValidation.js')
+    script(src='js/contact_me.js')
+    // Theme JavaScript
+    script(src='js/freelancer.min.js')
